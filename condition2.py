@@ -25,7 +25,7 @@ elif 40 <= percentage < 50:
 else:
     print("Fail")
 # determine the division based on the name of the students snd percentage 
-studentsname(input("enter your name here"))
+studentsname=(input("enter your name here"))
 marks_percentage = float (input ("enter your marks percentage "))
 
 

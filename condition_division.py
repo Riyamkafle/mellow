@@ -1,23 +1,31 @@
-# the student's information
-name = input("Enter the name of the student: ")
-total_marks = int(input("Enter the total marks obtained: "))
-total_subjects = int(input("Enter the number of subjects: "))
+# information of the students
+name= input("enter the students name here!:  ")
+total_marks= float(input("enter the total marks of you lad:  "))
+total_subjects= float(input("enetr the total subjects here!:  "))
+science= float(input("enetr your science marks "))
+math= float(input("enetr your math marks "))
+english= float(input("enetr your english marks "))
+social= float (input("enter your sicial marks"))
+computer= float(input("enetr your computer marks "))
 
-# Calculating total subject  percentage
-percentage = (total_marks / (total_subject * 100)) * 100
+#now we calculate the percentage of the studnets 
+percentage = (total_marks / (total_subjects * 100)) * 100
 
-#  division using if-else conditions
-if percentage >= 60:
-    division = "First Division"
+#division using the if and else condition 
+if percentage >=80 :
+    division= "{percentage} Distinction \n good job{name}" 
+elif percentage >= 60:
+    division="First division"
 elif percentage >= 45:
-    division = "Second Division"
+    division="Second division "
 elif percentage >= 33:
-    division = "Third Division"
-else:
-    division = "Fail"
+    division="third division" 
+else: 
+    division="failed!"
+    
 
-
-print(f"\nStudent Name: {name}")
-print(f"Total Marks: {total_marks}")
-print(f"Percentage: {percentage:.2f}%")
-print(f"Division: {division}")
+# now displaying the results below:
+print(f"\n students Name: {name} ") 
+print(f"total marks: {total_marks}" )    
+print(f"percentage : {percentage:.2f}%" )
+print(f"division:  {division}")
